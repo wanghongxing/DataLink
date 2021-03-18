@@ -922,7 +922,7 @@ CREATE TABLE `t_dl_flinker_job_run_queue` (
   `success_list` varchar(200) DEFAULT NULL COMMENT '已经执行完的job数量',
   `failure_list` varchar(200) DEFAULT NULL COMMENT '已执行失败的job数量',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `modify_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '修改时间',
+  `modify_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '修改时间',
   `top_time` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Flinker job运行队列表';

@@ -7,7 +7,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>forbidden Page - Datalink集中管理平台</title>
+    <title>forbidden Page - 链易通集中管理平台</title>
 
     <meta name="description" content="User login page"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -30,7 +30,7 @@
                 <div class="space-6"></div>
 
                 <div class="center">
-                    <h4 class="light-blue" id="id-company-text">&copy; 神州优车</h4>
+                    <h4 class="light-blue" id="id-company-text">&copy; 链易通贸易服务平台</h4>
                 </div>
             </div>
             <!-- /.col -->

@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Datalink - Admin</title>
+    <title>链易通 - Admin</title>
     <%@ include file="/WEB-INF/jsp/include.jsp" %>
 </head>
 

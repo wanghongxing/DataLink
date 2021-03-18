@@ -20,7 +20,7 @@
             <a href="/" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
-                    Datalink集中管理平台
+                    链易通集中管理平台
                 </small>
             </a>
         </div>

@@ -112,11 +112,11 @@
     <select id="listByGroupId" resultMap="taskResult" parameterType="long">
         select
         <include refid="allTaskColumns"/>
-        from T_DL_TASK where GROUP_ID= #{groupId} and is_delete='false'
+        from t_dl_task where GROUP_ID= #{groupId} and is_delete='false'
     </select>
 
     <select id="findMaxModifyTime" resultType="java.util.Date">
-        select max(MODIFY_TIME) from T_DL_TASK
+        select max(MODIFY_TIME) from t_dl_task
     </select>
 
     <select id="listByCondition" resultMap="taskResult">
@@ -157,7 +157,7 @@
     <select id="getTasksByType" resultMap="taskResult">
         SELECT
         <include refid="allTaskColumns"/>
-        from T_DL_TASK where is_delete='false' and task_type = #{taskType}
+        from t_dl_task where is_delete='false' and task_type = #{taskType}
     </select>
 
     <select id="getTaskMonitorInfoList" resultType="com.ucar.datalink.domain.monitor.TaskMonitorInfo">
@@ -191,7 +191,7 @@
         FROM t_dl_task where is_delete='false' AND group_id = #{groupId}
     </select>
     <update id="batchUpdateTaskInfo">
-        UPDATE T_DL_TASK
+        UPDATE t_dl_task
         <trim prefix="set" suffixOverrides=",">
             MODIFY_TIME=now(),
             <trim prefix="task_name=case" suffix="end,">

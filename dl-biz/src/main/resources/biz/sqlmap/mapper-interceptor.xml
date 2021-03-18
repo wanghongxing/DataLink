@@ -20,17 +20,17 @@
     <select id="findInterceptorById" parameterType="java.lang.Long" resultMap="interceptorResult">
         select
         <include refid="allColumns"/>
-        from T_DL_INTERCEPTOR where id = #{id}
+        from t_dl_interceptor where id = #{id}
     </select>
     <select id="getList" resultMap="interceptorResult">
         select
         <include refid="allColumns"/>
-        from T_DL_INTERCEPTOR
+        from t_dl_interceptor
     </select>
 
     <insert id="insert" parameterType="com.ucar.datalink.domain.interceptor.InterceptorInfo" useGeneratedKeys="true"
             keyProperty="id">
-        INSERT INTO T_DL_INTERCEPTOR
+        INSERT INTO t_dl_interceptor
         (interceptor_name,
         interceptor_desc,
         interceptor_type,
@@ -49,7 +49,7 @@
     </insert>
 
     <update id="update" parameterType="com.ucar.datalink.domain.interceptor.InterceptorInfo">
-        UPDATE T_DL_INTERCEPTOR
+        UPDATE t_dl_interceptor
         SET
         interceptor_name = #{name},
         interceptor_desc = #{desc},
@@ -61,6 +61,6 @@
     </update>
 
     <delete id="delete" parameterType="java.lang.Long">
-        DELETE FROM T_DL_INTERCEPTOR WHERE id = #{id}
+        DELETE FROM t_dl_interceptor WHERE id = #{id}
     </delete>
 </mapper>

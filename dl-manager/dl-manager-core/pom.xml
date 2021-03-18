@@ -186,6 +186,32 @@
             <version>1.7.1</version>
         </dependency>
 
+<!-- whx-->
+
+    <!-- <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>apache-jstl</artifactId>
+        <version>${jetty-version}</version>
+    </dependency>
+<dependency>
+    <groupId>org.eclipse.jetty.toolchain</groupId>
+    <artifactId>jetty-jsp-jdt</artifactId>
+    <version>2.3.3</version>
+</dependency> -->
+<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<!-- <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+                <version>1.2</version>
+
+		</dependency> -->
+<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+<!-- <dependency>
+    <groupId>jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency> -->
+
     </dependencies>
 
     <build>

@@ -7,7 +7,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>Login Page - Datalink集中管理平台</title>
+    <title>Login Page - 链易通集中管理平台</title>
 
     <meta name="description" content="User login page"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -28,7 +28,7 @@
                         <h1>
                             <i class="ace-icon fa fa-automobile light-blue"></i>
                             <span class="red"></span>
-                            <span class="white" id="id-text2">Datalink集中管理平台</span>
+                            <span class="white" id="id-text2">链易通集中管理平台</span>
                         </h1>
                     </div>
 
@@ -88,7 +88,7 @@
                     <!-- /.position-relative -->
 
                     <div class="center">
-                        <h4 class="light-blue" id="id-company-text">&copy; 神州优车</h4>
+                        <h4 class="light-blue" id="id-company-text">&copy; 链易通贸易服务平台</h4>
                     </div>
                 </div>
             </div>
