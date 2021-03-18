@@ -71,3 +71,13 @@ wget http://repo.odysseusinc.com/artifactory/community-libs-release-local/com/cl
 mvn install:install-file -Dfile=./ImpalaJDBC41-2.6.3.jar -DgroupId=com.cloudera -DartifactId=ImpalaJDBC41 -Dversion=2.6.3 -Dpackaging=jar -DpomFile=./ImpalaJDBC41-2.6.3.pom
 
 
+
+
+---
+Could not lock System prefs. Unix error code 32629
+
+mkdir -p ~/.java/.systemPrefs
+chmod -R 755 ~/.java
+export JAVA_OPTS="-Djava.util.prefs.systemRoot=/home/vagrant/.java -Djava.util.prefs.userRoot=/home/vagrant/.java/.userPrefs"
+
+
