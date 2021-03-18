@@ -76,8 +76,13 @@ mvn install:install-file -Dfile=./ImpalaJDBC41-2.6.3.jar -DgroupId=com.cloudera 
 ---
 Could not lock System prefs. Unix error code 32629
 
-mkdir -p ~/.java/.systemPrefs
+mkdir -p ~/.java/.userPrefsManager
 chmod -R 755 ~/.java
-export JAVA_OPTS="-Djava.util.prefs.systemRoot=/home/vagrant/.java -Djava.util.prefs.userRoot=/home/vagrant/.java/.userPrefs"
+export JAVA_OPTS="-Djava.util.prefs.systemRoot=~/.java -Djava.util.prefs.userRoot=~/.java/.userPrefsManager"
 
+
+
+mkdir -p ~/.java/.userPrefsWorker
+chmod -R 755 ~/.java
+export JAVA_OPTS="-Djava.util.prefs.systemRoot=~/.java -Djava.util.prefs.userRoot=~/.java/.userPrefsWorker"
 
